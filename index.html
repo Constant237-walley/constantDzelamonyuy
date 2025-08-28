@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Dzelamonyuy | Full-Stack Developer & Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .active:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-xl font-bold text-blue-600">Constant.</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Constant Dzelamonyuy</h1>
+                    <h2 class="text-xl md:text-2xl text-blue-600 font-medium mb-6">Web Designer | Front-End Developer | Graphics Designer | Backend Developer</h2>
+                    <p class="text-gray-600 mb-8">Crafting beautiful, functional digital experiences that make an impact.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Get In Touch</a>
+                        <a href="#projects" class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md font-medium transition duration-300">View My Work</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="WhatsApp Image 2025-08-27 at 19.59.47_f5c21d2d.jpg" alt="Constant Dzelamonyuy" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                        <img src="WhatsApp%20Image%202025-08-27%20at%2020.00.05_b0e3ebd2.jpg" alt="Constant Dzelamonyuy" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Creative Developer & Designer</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm Constant Dzelamonyuy, a passionate full-stack developer and designer with expertise in creating visually appealing and highly functional digital experiences. With a keen eye for design and a strong technical background, I bridge the gap between aesthetics and functionality.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        My approach combines creative problem-solving with technical precision, ensuring that every project I work on not only looks great but also performs exceptionally. I'm constantly learning and adapting to new technologies to stay at the forefront of web development.
+                    </p>
+                    <p class="text-gray-600">
+                        When I'm not coding or designing, you can find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Skills</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Web Design -->
+                <div class="skill-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-paint-brush text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Design</h3>
+                    <p class="text-gray-600">
+                        Creating visually stunning and user-friendly interfaces with a focus on responsive design and optimal user experience.
+                    </p>
+                </div>
+                
+                <!-- Front-End Development -->
+                <div class="skill-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-code text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Front-End Development</h3>
+                    <p class="text-gray-600">
+                        Building interactive and performant web applications using modern JavaScript frameworks and best practices.
+                    </p>
+                </div>
+                
+                <!-- Graphics Design -->
+                <div class="skill-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-palette text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Graphics Design</h3>
+                    <p class="text-gray-600">
+                        Crafting compelling visual identities, logos, and marketing materials that communicate brand values effectively.
+                    </p>
+                </div>
+                
+                <!-- Backend Development -->
+                <div class="skill-card bg-white p-8 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-server text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Backend Development</h3>
+                    <p class="text-gray-600">
+                        Developing robust server-side applications, APIs, and databases to power complex web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">My Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Here are some of my recent projects. More coming soon!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 Placeholder -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-100 to-indigo-200 flex items-center justify-center">
+                        <span class="text-blue-600 text-4xl font-bold">Project 1</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">E-Commerce Website</h3>
+                        <p class="text-gray-600 mb-4">A fully responsive e-commerce platform with product filtering and cart functionality.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 Placeholder -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-purple-100 to-pink-200 flex items-center justify-center">
+                        <span class="text-purple-600 text-4xl font-bold">Project 2</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Portfolio Template</h3>
+                        <p class="text-gray-600 mb-4">A customizable portfolio template for creative professionals with dark/light mode.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">GSAP</span>
+                        </div>
+                        <a href="#" class="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 Placeholder -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-green-100 to-teal-200 flex items-center justify-center">
+                        <span class="text-green-600 text-4xl font-bold">Project 3</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">A productivity app with drag-and-drop functionality and team collaboration features.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Vue.js</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Firebase</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">TailwindCSS</span>
+                        </div>
+                        <a href="#" class="text-green-600 hover:text-green-800 font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-50 rounded-md font-medium transition duration-300">
+                    View All Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Project Inquiry">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Phone/WhatsApp</h4>
+                                    <a href="tel:+237653060772" class="text-base text-gray-800 hover:text-blue-600">(237) 653060772</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Email</h4>
+                                    <a href="mailto:constantdzelamonyuy@gmail.com" class="text-base text-gray-800 hover:text-blue-600">constantdzelamonyuy@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fab fa-github text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">GitHub</h4>
+                                    <a href="https://github.com/constant237-walley" target="_blank" class="text-base text-gray-800 hover:text-blue-600">constant237-walley</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                    <i class="fab fa-linkedin-in text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/constant-dzelamonyuy" target="_blank" class="text-base text-gray-800 hover:text-blue-600">Constant Dzelamonyuy</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="text-sm font-medium text-gray-500 mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/constant237-walley" target="_blank" class="h-10 w-10 rounded-full bg-gray-100 hover:bg-blue-100 flex items-center justify-center text-gray-700 hover:text-blue-600 transition duration-300">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/constant-dzelamonyuy" target="_blank" class="h-10 w-10 rounded-full bg-gray-100 hover:bg-blue-100 flex items-center justify-center text-gray-700 hover:text-blue-600 transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://wa.me/237653060772" target="_blank" class="h-10 w-10 rounded-full bg-gray-100 hover:bg-blue-100 flex items-center justify-center text-gray-700 hover:text-blue-600 transition duration-300">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:constantdzelamonyuy@gmail.com" class="h-10 w-10 rounded-full bg-gray-100 hover:bg-blue-100 flex items-center justify-center text-gray-700 hover:text-blue-600 transition duration-300">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#home" class="text-xl font-bold text-white">Constant Dzelamonyuy</a>
+                    <p class="text-gray-400 mt-1">Web Designer | Developer | Creative Professional</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/constant237-walley" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/constant-dzelamonyuy" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/237653060772" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="mailto:constantdzelamonyuy@gmail.com" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; <span id="year"></span> Constant Dzelamonyuy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Add active class to current section in navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
